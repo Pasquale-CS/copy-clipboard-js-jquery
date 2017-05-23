@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Plugin copy clipboard for Javascript and jQuery</title>
+
+	<!-- Bootstrap CSS CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+	<div id="pcs-cp-container" class="container">
+		<h1>Plugin copy clipboard for Javascript and jQuery</h1>
+
+		<table class="table">
+			<tr>
+				<th>FIELD 1</th>
+				<th>FIELD 2</th>
+				<th>FIELD 3</th>
+			</tr>
+			<tr id="pcs-cp-element">
+				<td>First</td>
+				<td><input type="text" value="123456"></td>
+				<td>Third</td>
+			</tr>
+		</table>
+	</div>
+
+    <div class="container">
+    	<button class="btn btn-warning" onclick="pcsCpClipboard('pcs-cp-container')">Copy Javascript</button>
+
+		<button class="btn btn-primary" id="pcs-cc-button">Copy jQuery</button>
+    </div>
+
+	<!-- jQuery -->
+	<script src="vendor/jquery-1.12.4.min.js"></script>
+
+	<!-- Plugin copy elements for jQuery -->
+	<script src="js/pcsCpClipboard.js"></script> <!-- INCLUDE IN YOUR PROJECT -->
+
+	<!-- INCLUDE IN YOUR PROJECT -->
+	<script>
+		$(document).ready(function() {
+			$('#pcs-cp-container').pcsCpClipboard({ // Set elemente ID to copy (ONLY ID)
+				button: '#pcs-cc-button' // Set button for copy
+			});
+		});
+	</script>
+</body>
+</html>
