@@ -29,7 +29,7 @@ Include "js/pcsCpClipboard.js" in your project and use the function "pcsCpClipbo
         <th>FIELD 2</th>
         <th>FIELD 3</th>
       </tr>
-      <tr id="pcs-cp-element">
+      <tr>
         <td>First</td>
         <td><input type="text" value="123456"></td>
         <td>Third</td>
@@ -86,7 +86,7 @@ Includere il file "js/pcsCpClipboard.js" net tuo progetto e usare la funzione "p
         <th>FIELD 2</th>
         <th>FIELD 3</th>
       </tr>
-      <tr id="pcs-cp-element">
+      <tr>
         <td>First</td>
         <td><input type="text" value="123456"></td>
         <td>Third</td>
