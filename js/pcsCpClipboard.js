@@ -20,7 +20,7 @@
         }, options );
  
         // Copy
-        $(settings.button).click(function(e) {
+        $.find(settings.button).click(function(e) {
             e.preventDefault();
 
             pcsCpClipboard(id);
