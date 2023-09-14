@@ -71,11 +71,11 @@ function selectElementContents(el) {
 
 function prepare(el) {
 	$("input").each(function(index) {
-		$(this).after('<span class="remove">' + $(this).val() + '</span>');
+		$(this).after('<span class="remove">' + $.find(this).val() + '</span>');
 	});
 
 	$("select").each(function(index) {
-		$(this).after('<span class="remove">' + $(this).val() + '</span>');
+		$(this).after('<span class="remove">' + $.find(this).val() + '</span>');
 	});
 
 	$("textarea").each(function(index) {
