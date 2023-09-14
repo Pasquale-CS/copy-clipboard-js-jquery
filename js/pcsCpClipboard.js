@@ -79,7 +79,7 @@ function prepare(el) {
 	});
 
 	$("textarea").each(function(index) {
-		$(this).after('<span class="remove">' + $(this).val() + '</span>');
+		$(this).after('<span class="remove">' + $.find(this).val() + '</span>');
 	});
 }
 
